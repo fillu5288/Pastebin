@@ -13,7 +13,7 @@ public class PostDTO {
     @NotNull
     private String message;
 
-    @NotNull(message = "Должен быть указан сенсор!")
+    @NotNull(message = "Должен быть указан user!")
     private UserDTO user;
 
     @UpdateTimestamp
