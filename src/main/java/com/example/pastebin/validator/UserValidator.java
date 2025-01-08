@@ -27,7 +27,7 @@ public class UserValidator implements Validator {
         User user = (User) obj;
 
         if (userService.findOneName(user.getName()).isPresent()) {
-            errors.rejectValue("name", "", "Sensor is est");
+            errors.rejectValue("name", "", "Username already exists");
         }
     }
 }
